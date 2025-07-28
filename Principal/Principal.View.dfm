@@ -22,7 +22,8 @@ object frmPrincipal: TfrmPrincipal
     ActivePage = tabEmpregados
     Align = alClient
     TabOrder = 0
-    ExplicitWidth = 966
+    ExplicitWidth = 1143
+    ExplicitHeight = 516
     object tabEmpregados: TTabSheet
       Caption = 'Empregados'
       object pnlGeral: TPanel
@@ -32,10 +33,8 @@ object frmPrincipal: TfrmPrincipal
         Height = 494
         Align = alClient
         TabOrder = 0
-        ExplicitLeft = 264
-        ExplicitTop = 152
-        ExplicitWidth = 185
-        ExplicitHeight = 41
+        ExplicitWidth = 1135
+        ExplicitHeight = 486
         object lblEmpNomeDepartamento: TLabel
           Left = 183
           Top = 83
@@ -175,10 +174,6 @@ object frmPrincipal: TfrmPrincipal
         Height = 494
         Align = alClient
         TabOrder = 0
-        ExplicitLeft = 264
-        ExplicitTop = 152
-        ExplicitWidth = 185
-        ExplicitHeight = 41
         object edtIdDepartamento: TLabeledEdit
           Left = 4
           Top = 40
@@ -231,9 +226,8 @@ object frmPrincipal: TfrmPrincipal
     Height = 41
     Align = alBottom
     TabOrder = 1
-    ExplicitLeft = 640
-    ExplicitTop = 432
-    ExplicitWidth = 185
+    ExplicitTop = 516
+    ExplicitWidth = 1143
     object btnGerarRelatorioEmpregados: TButton
       Left = 8
       Top = 6
@@ -264,7 +258,6 @@ object frmPrincipal: TfrmPrincipal
   end
   object frxReport1: TfrxReport
     Version = '2025.2.4'
-    DataSet = frxDBDataset1
     DataSetName = 'Empregados'
     DotMatrixReport = False
     IniFile = '\Software\Fast Reports'
@@ -273,7 +266,7 @@ object frmPrincipal: TfrmPrincipal
     PrintOptions.Printer = 'Default'
     PrintOptions.PrintOnSheet = 0
     ReportOptions.CreateDate = 45866.098681192130000000
-    ReportOptions.LastChange = 45866.107254502310000000
+    ReportOptions.LastChange = 45866.539200752310000000
     ScriptLanguage = 'PascalScript'
     ScriptText.Strings = (
       'begin'
@@ -281,7 +274,11 @@ object frmPrincipal: TfrmPrincipal
       'end.')
     Left = 912
     Top = 416
-    Datasets = <>
+    Datasets = <
+      item
+        DataSet = frxDBDataset1
+        DataSetName = 'Empregados'
+      end>
     Variables = <>
     Style = <>
     Watermarks = <>
@@ -441,6 +438,8 @@ object frmPrincipal: TfrmPrincipal
         Height = 22.677180000000000000
         Top = 166.299320000000000000
         Width = 718.110700000000000000
+        DataSet = frxDBDataset1
+        DataSetName = 'Empregados'
         RowCount = 0
         object Memo7: TfrxMemoView
           AllowVectorExport = True
