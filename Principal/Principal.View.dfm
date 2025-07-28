@@ -11,6 +11,8 @@ object frmPrincipal: TfrmPrincipal
   Font.Name = 'Segoe UI'
   Font.Style = []
   WindowState = wsMaximized
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
   TextHeight = 15
   object pgcGeral: TPageControl
     Left = 0
