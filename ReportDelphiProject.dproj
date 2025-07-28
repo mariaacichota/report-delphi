@@ -95,6 +95,11 @@
             <Form>Form1</Form>
             <FormType>dfm</FormType>
         </DCCReference>
+        <DCCReference Include="Empregado\Empregado.Model.pas"/>
+        <DCCReference Include="Empregado\Empregado.ViewModel.pas"/>
+        <DCCReference Include="Departamento\Departamento.Model.pas"/>
+        <DCCReference Include="Departamento\Departamento.ViewModel.pas"/>
+        <DCCReference Include="Conexão\Conexao.Model.pas"/>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
         </BuildConfiguration>
