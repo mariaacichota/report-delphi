@@ -305,7 +305,7 @@ object frmPrincipal: TfrmPrincipal
         FillGap.Right = 0
         Frame.Typ = []
         Height = 41.574829770000000000
-        Top = 16.000000000000000000
+        Top = 18.897650000000000000
         Width = 718.110700000000000000
         object Memo1: TfrxMemoView
           AllowVectorExport = True
@@ -340,7 +340,7 @@ object frmPrincipal: TfrmPrincipal
         Font.Style = []
         Height = 22.677180000000000000
         ParentFont = False
-        Top = 76.000000000000000000
+        Top = 83.149660000000000000
         Width = 718.110700000000000000
         object Memo2: TfrxMemoView
           AllowVectorExport = True
@@ -437,7 +437,7 @@ object frmPrincipal: TfrmPrincipal
         FillGap.Right = 0
         Frame.Typ = []
         Height = 22.677180000000000000
-        Top = 120.000000000000000000
+        Top = 166.299320000000000000
         Width = 718.110700000000000000
         RowCount = 0
         object Memo7: TfrxMemoView
@@ -533,7 +533,7 @@ object frmPrincipal: TfrmPrincipal
         FillGap.Right = 0
         Frame.Typ = []
         Height = 22.677180000000000000
-        Top = 164.000000000000000000
+        Top = 249.448980000000000000
         Width = 718.110700000000000000
         object Memo12: TfrxMemoView
           AllowVectorExport = True
