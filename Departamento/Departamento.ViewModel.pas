@@ -11,6 +11,7 @@ type
   private
     FDepartamento: TDepartamento;
     FConn: TFDConnection;
+    procedure LimparCampos;
   public
     constructor Create(mConn: TFDConnection);
     destructor Destroy; override;
@@ -48,6 +49,9 @@ begin
     mQuery.SQL.Text := 'SELECT * FROM departamentos WHERE id_departamento = :mId';
     mQuery.ParamByName('mId').AsInteger := mId;
     mQuery.Open;
+
+    if mQuery.IsEmpty then
+      LimparCampos;
 
     if not mQuery.Eof then
     begin
@@ -121,6 +125,13 @@ begin
   finally
     mQuery.Free;
   end;
+end;
+
+procedure TDepartamentoViewModel.LimparCampos;
+begin
+  FDepartamento.IdDepartamento := 0;
+  FDepartamento.Nome           := EmptyStr;
+  FDepartamento.Local          := EmptyStr;
 end;
 
 end.

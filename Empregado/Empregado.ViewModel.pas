@@ -11,6 +11,7 @@ type
   private
     FEmpregado: TEmpregado;
     FConn: TFDConnection;
+    procedure LimparCampos;
   public
     constructor Create(mConn: TFDConnection);
     destructor Destroy; override;
@@ -49,6 +50,9 @@ begin
     mQuery.SQL.Text := 'SELECT * FROM empregados WHERE id_empregado = :mId';
     mQuery.ParamByName('mId').AsInteger := mId;
     mQuery.Open;
+
+    if mQuery.IsEmpty then
+      LimparCampos;
 
     if not mQuery.Eof then
     begin
@@ -143,6 +147,18 @@ begin
   finally
     FreeAndNil(mQuery);
   end;
+end;
+
+procedure TEmpregadoViewModel.LimparCampos;
+begin
+  FEmpregado.IdEmpregado     := 0;
+  FEmpregado.CodDepartamento := 0;
+  FEmpregado.CodEmpFuncao    := 0;
+  FEmpregado.Nome            := EmptyStr;
+  FEmpregado.Funcao          := EmptyStr;
+  FEmpregado.DataAdmissao    := Now;
+  FEmpregado.Salario         := 0.0;
+  FEmpregado.Comissao        := 0.0;
 end;
 
 end.

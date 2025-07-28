@@ -105,6 +105,7 @@ object frmPrincipal: TfrmPrincipal
           Height = 25
           Caption = 'Buscar'
           TabOrder = 4
+          OnClick = btnEmpBuscarDepartamentoClick
         end
         object edtIdFuncao: TLabeledEdit
           Left = 4
@@ -266,7 +267,7 @@ object frmPrincipal: TfrmPrincipal
     PrintOptions.Printer = 'Default'
     PrintOptions.PrintOnSheet = 0
     ReportOptions.CreateDate = 45866.098681192130000000
-    ReportOptions.LastChange = 45866.539200752310000000
+    ReportOptions.LastChange = 45866.543206712970000000
     ScriptLanguage = 'PascalScript'
     ScriptText.Strings = (
       'begin'
@@ -498,6 +499,8 @@ object frmPrincipal: TfrmPrincipal
           Height = 18.897651670000000000
           ContentScaleOptions.Constraints.MaxIterationValue = 0
           ContentScaleOptions.Constraints.MinIterationValue = 0
+          DisplayFormat.FormatStr = '%2.2m'
+          DisplayFormat.Kind = fkNumeric
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clBlack
           Font.Height = -13
