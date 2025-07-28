@@ -26,7 +26,7 @@ begin
     mConn.Params.Values['Server']    := 'localhost';
     mConn.Params.Values['Database']  := 'HospiData';
     mConn.Params.Values['User_Name'] := 'postgres';
-    mConn.Params.Values['Password'] := '';
+    mConn.Params.Values['Password']  := '';
     mConn.Params.Values['Port']      := '5432';
     mConn.LoginPrompt                := False;
 
